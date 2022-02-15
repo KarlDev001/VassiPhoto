@@ -206,10 +206,11 @@ button:hover {
 
 @media screen and (max-width: 937px) {
     .about {
-        margin-top: 10px;
+        margin-top: -50px;
     }
     .about * {
         display: block;
+        margin: 0 auto;
         max-width: 100%;
     }
     .about button {
@@ -222,8 +223,15 @@ button:hover {
         text-align: center;
     }
     .about img {
-        width: 100%;
+        width: 454px;
     }
+    .white__space {
+        height: 0px;
+    }
+}
+
+.white__space {
+    height: 275px;
 }
 
 
