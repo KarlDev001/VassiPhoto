@@ -127,10 +127,11 @@ header {
 /* Apie */
 .about{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
 }
 
 .about .content img{
@@ -241,6 +242,55 @@ button:hover{
         font-size: 60px;
         margin-bottom: 25px;
     }
+}
+
+/* Grid */
+.container{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.btndiv{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+
+.btn-gal{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    width: 200px;
+}
+
+button:hover{
+    background-color: black;
+    border: 3px solid transparent ;
+    color:white;
+    transition: .4s;
+    cursor: pointer;
 }
 
 /* Footer */
