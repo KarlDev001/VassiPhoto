@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 body {
@@ -122,118 +124,124 @@ header {
     }
 }
 
-
-/* About */
-
-.about {
+/* Apie */
+.about{
     width: 100%;
-    padding: 78px 0px;
-    margin-top: 150px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about img {
+.about .content img{
     height: auto;
-    width: 420px;
-    border-radius: 10px;
+    width: 900px;
+    max-width: 100%;
 }
 
-.about-text {
+.text{
     width: 550px;
+    max-width: 100%;
+    padding: 0 auto;
 }
 
-.main {
-    width: 1130px;
+.content {
+    width: 1500px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
-.about-text h1 {
-    color: black;
-    font-size: 80px;
+.text h1{
+    font-size: 85px;
+    margin-bottom: 20px;
     text-transform: capitalize;
-    margin-bottom: 0px;
 }
 
-.about-text h5 {
-    color: black;
+.text h5{
     font-size: 25px;
+    margin-bottom: 25px;
     text-transform: capitalize;
-    margin-bottom: 10px;
     letter-spacing: 2px;
 }
 
-.about-text p {
-    letter-spacing: 1px;
-    line-height: 28px;
+.text p{
     font-size: 18px;
-    margin-bottom: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
 }
 
-button {
+button{
+    background-color: white;
     color: black;
-    border: 2px solid black;
+    border: 3px solid black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
     font-weight: bold;
-    padding: 13px 30px;
+}
+
+button:hover{
+    background-color: black;
+    border: 3px solid transparent ;
+    color:white;
     transition: .4s;
     cursor: pointer;
-    border-radius: 10px;
 }
 
-button:hover {
-    background: black;
+.about-link{
+    padding-left: 0px;
+    margin-top: 30px;
+}
+
+.about-link li{
+    display: inline-block;
+}
+
+.about-link li a i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 10px;
+    font-size: 22px;
+    color: black;
+    transition: all .3s;
+    
+}
+
+
+.about-link li a i:hover{
     color: white;
+    background: black;
+    border-color: black;
+    
 }
 
-@media screen and (max-width: 1066px) {
-    .about img {
-        height: auto;
-        width: 320px;
-    }
-    .about-text h1 {
-        font-size: 50px;
-    }
-    .about-text h5 {
-        font-size: 20px;
-    }
-    .about-text p {
-        font-size: 10px;
-        line-height: 18px;
-    }
-}
 
-@media screen and (max-width: 937px) {
-    .about {
-        margin-top: -50px;
-    }
-    .about * {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-    }
-    .about button {
+@media screen and (max-width: 1180px){
+    .about{
         width: 100%;
-        height: 50px;
-    }
-    .about h1,
-    h5,
-    p {
-        text-align: center;
-    }
-    .about img {
-        width: 454px;
-    }
-    .white__space {
-        height: 0px;
+        height: auto;
+        padding: 70px 0px;
     }
 }
 
-.white__space {
-    height: 275px;
+@media screen and (max-width: 650px){
+    .about .content img{
+        margin-bottom: 35px;
+    }
+    .text h1{
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
 }
-
 
 /* Footer */
 
